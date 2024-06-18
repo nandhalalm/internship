@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      width: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(111.jpg);
+      height: 100vh;
+
+      background-size: cover;
+    }
+
+    .icon {
+      width: 200px;
+      float: left;
+      height: 70px;
+
+    }
+
+    .logo {
+      color: orange;
+      font-size: 35px;
+      font-family: Arial;
+      padding-left: 20px;
+      float: left;
+      padding-top: 10px;
+    }
+
+    .menu {
+      width: 400px;
+      float: left;
+      height: 70px;
+      display: inline;
+    }
+
+    ul {
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    ul li {
+      list-style: none;
+      margin-left: 62px;
+      margin-top: 27px;
+      font-size: 14px;
+
+
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: whitesmoke;
+      font-family: Arial;
+      font-weight: bold;
+      transition: 0.4s ease-in-out;
+      padding-right: 25px;
+
+    }
+
+    ul li a:hover {
+      color: orange;
+    }
+
+    .search {
+      width: 330px;
+      margin-left: 75%;
+    }
+
+    .srch {
+      font-family: 'Times New Roman';
+      width: 200px;
+      height: 40px;
+      background: transparent;
+      border: 1px solid orange;
+      margin-top: 13px;
+      color: white;
+      border-right: none;
+      font-size: 16px;
+      padding: 10px;
+      border-bottom-left-radius: 2px;
+      border-top-left-radius: 2px;
+      box-sizing: border-box;
+    }
+
+    .btn {
+      width: 100px;
+      height: 40px;
+      background: orange;
+      border: 2px solid orange;
+      margin-top: 13px;
+      color: white;
+      font-size: 15px;
+      border-top-left-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+
+    .btn:focus {
+      outline: none;
+    }
+
+    .srch:focus {
+      outline: none;
+    }
+
+    .content {
+      width: 1200px;
+      height: auto;
+      margin: auto;
+      color: aliceblue;
+      position: relative;
+    }
+
+    .content .par {
+      padding-left: 20px;
+      padding-bottom: 25px;
+      font-family: Arial;
+      letter-spacing: 1.2px;
+      line-height: 30px;
+    }
+
+    .content h1 {
+      font-family: 'Times New Roman';
+      font-size: 50px;
+      padding-left: 50px;
+      padding-left: 20px;
+      margin-top: 9%;
+      letter-spacing: 2px;
+    }
+
+    .content .cn {
+      width: 160px;
+      height: 40px;
+      background: orange;
+      border: none;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .content .cn a {
+      text-decoration: none;
+      color: aqua;
+      
+    }
+
+    .cn:hover {
+      background-color: bisque;
+    }
+
+    .form {
+      width: 250px;
+      height: 380px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+      position: absolute;
+      top: -20px;
+      left: 870px;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+      
+    }
+
+    .form h2 {
+      width: 220px;
+      font-family: sans-serif;
+      text-align: center;
+      color: orange;
+      font-size: 22px;
+      background-color: azure;
+      border-radius: 10px;
+      margin: 2px;
+      padding: 8px;
+    }
+
+    .form input {
+      width: 250px;
+      height: 35px;
+      background: transparent;
+      border-bottom: 1px solid orange;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      color: aquamarine;
+      font-size: 10px;
+      letter-spacing: 1px;
+      margin-top: 30px;
+      font-family: sans-serif;
+    }
+
+    .btnn {
+      width: 200px;
+      height: 20px;
+      background: orange;
+      border: none;
+      margin-top: 30px;
+      font-size: 18px;
+      border-radius: 10px;
+
+    }
+
+    .btnn:hover {
+      background-color: antiquewhite;
+      color: orange;
+    }
+
+    .btnn a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .icon {
+      position:relative;
+      left: 23px;
+      bottom: 10px;
+    }
+
+    .icon svg {
+      padding: 5px;
+      size-adjust: 28px ;   
+    }
+    span:hover {
+      background-color: rgba(19, 169, 104, 0.922);
+      cursor: pointer;
+    } 
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="navbar">
+      <div class="icon">
+        <h2 class="logo">praRoz</h2>
+      </div>
+
+      <div class="menu"></div>
+      <ul>
+        <li><a href="home.asp">HOME</a></li>
+        <li><a href="news.asp">NEWS</a></li>
+        <li><a href="about.asp">ABOUT</a></li>
+        <li><a href="usage.asp">USAGE</a></li>
+      </ul>
+    </div>
+
+    <div class="search">
+      <input class="srch" type="search" name="" placeholder="Type To text">
+      <a href="#"> <button class="btn">Search</button></a>
+    </div>
+
+    <div class="content">
+      <h1>web design &<br><span class="dev" style="color: red;"> Development</span><br>course</h1>
+      <p class="par">Lorem ipsum dolor sit amet. Non cumque<br>
+        iusto sed voluptas vero rem tempore omnis est reiciendis<br>
+        officiis qui rerum porro qui expedita nisi. <br>
+        <br>Et porro nesciunt sed enim recusandae aut dolor <br>
+        optio qui libero ipsam id consectetur nobis. Est quae quia<br>
+        sed voluptates quibusdam vel aliquid facilis <br>
+        aut quos dolor et consequatur unde.
+      </p>
+      <button class="cn"><a href="#">join us</a></button>
+      <div class="form">
+        <h2>LOGIN</h2>
+        <input type="email" name="email" placeholder="email here">
+        <input type="password" name="password" placeholder="password"><br><br>
+        <button class="btn"> <a href="#">LOGIN</a></button> <br><br>
+        <p style="color: white;">Don't have an account?<br><span class="Sign" style="color: rgb(255, 94, 0);">Sign
+            up</span> here</p><br><br><br>
+
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+            class="bi bi-opencollective" viewBox="0 0 16 16">
+            <path fill-opacity=".4"
+              d="M12.995 8.195c0 .937-.312 1.912-.78 2.693l1.99 1.99c.976-1.327 1.6-2.966 1.6-4.683 0-1.795-.624-3.434-1.561-4.76l-2.068 2.028c.468.781.78 1.679.78 2.732z" />
+            <path
+              d="M8 13.151a4.995 4.995 0 1 1 0-9.99c1.015 0 1.951.273 2.732.82l1.95-2.03a7.805 7.805 0 1 0 .04 12.449l-1.951-2.03a5.07 5.07 0 0 1-2.732.781z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter"
+            viewBox="0 0 16 16">
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+            <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+          </svg>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
