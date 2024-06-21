@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<style>
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .hamburger {
+    float: right;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .hamburger span:nth-child(1) {
+    transform-origin: left center;
+  }
+  
+  .hamburger span:nth-child(2) {
+    transform-origin: left center;
+  }
+  
+  .hamburger span:nth-child(3) {
+    transform-origin: left center;
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 4px);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -4px);
+  }
+  
+  main {
+    padding: 20px 0;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  
+  .col-md-4 {
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .card-footer {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .card-stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-stat {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .card-author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .card-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .card-finance {
+    background-color: #f0f0f0;
+  }
+  
+  .card-video {
+    position: relative;
+  }
+  
+  .card-video img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  
+  
+  .card-leadership {
+    background-color: #f0f0f0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .footer-newsletter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .footer-newsletter button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+  }
+  .footer-copyright {
+    font-size: 14px;
+  }
+  
+  .footer-social {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deck - UI Kit</title>
+  
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#">Deck.</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Ideas</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Video</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Finance</a></li>
+          <li><a href="#">Entertainment</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-finance">
+            <div class="card-header">
+              <div class="card-title">
+                FINANCE
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                Unmatched Toner Cartridge
+                Quality 20 Less Than Oem
+                Price
+              </div>
+              <p>There is a lot of exciting stuff going on in the stars above us that make astronomy so much fun.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-stats">
+                <span class="card-stat">
+                  <i class="fas fa-arrow-up"></i>
+                  275
+                </span>
+                <span class="card-stat">
+                  <i class="fas fa-eye"></i>
+                  275
+                </span>
+                <span class="card-stat">
+                  <i class="fas fa-comment"></i>
+                  12
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#">Deck.</a>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2018 Deck. Component based UI Kit</p>
+        </div>
+        <div class="footer-social">
+          <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="footer-newsletter">
+          <input type="email" placeholder="Your E-mail" />
+          <button type="button">SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+</body>
+</html>

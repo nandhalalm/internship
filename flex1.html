@@ -1,31 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<div class=" container">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeekTracker</title>
+    <style>
+        body{
+            padding: 100px 70px 100px 40px;
+        }
+        img{
+            border-radius: 50px;
+            margin: 10px 0px 0px 10px;
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        .left1{
+            background-color: blue;
+            color: white;
+            width: 180px;
+            height: 215px;
+            border-radius: 14px;
+            position:absolute;
+            padding-left: 15px;
+            margin-left: 300px;   
+        }
+        .left2{
+            background-color: darkblue;
+            color:gray;
+            font-size: small;
+            width: 180px;
+            height: 140px;
+            border-radius: 8px;
+            position: absolute;
+            top: 317px;
+            z-index: -1;
+            padding-left: 15px;
+            padding-top: 10px;
+            margin-left: 300px;   
+        }
+        .left2 > p:hover{
+            color: white;
+        }
+        .main1{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left:300px;   
+        }
+        .box1{
+            background-color:antiquewhite;
+            width: 200px;
+            height: 150px;
+            border-radius: 14px;
+            margin-left: 215px;
+        }
+        .box2{
+            background-color: rgb(0, 166, 255);
+            width: 200px;
+            height: 150px;
+            border-radius: 14px;
+            margin-left: 20px;
+        }
+        .box3{
+            background-color:rgba(239, 49, 49, 0.937);
+            width: 200px;
+            height: 150px;
+            border-radius: 14px;
+            margin-left: 20px;
+        }
+        .main2{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 300px;   
+            
+        }
+        .box4{
+            background-color:rgb(212, 114, 209);
+            width: 200px;
+            height: 150px;
+            border-radius: 14px;
+            margin-left: 215px;
+            margin-top:35px;
+        }
+        .box5{
+            background-color:rgb(36, 2, 90);
+            width: 200px;
+            height: 150px;
+            border-radius: 14px;
+            margin-left: 20px;
+            margin-top:35px;
+        }
+        .box6{
+            background-color:rgb(171, 113, 253);
+            width: 200px;
+            height: 150px;
+            border-radius: 14px;
+            margin-left: 20px;
+            margin-top:35px;
+        }
+        .main3{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 300px;   
+        }
+        .main3 > div{
+            background-color: darkblue;
+        }
+        .content1{
+            width: 200px;
+            height: 110px;
+            border-radius: 8px;
+            margin-left: 215px;
+            position: absolute;
+            top: 155px;
+            color: white;
+            
+        }
+        .content2{
+            width: 200px;
+            height: 109px;
+            border-radius: 8px;
+            margin-left: 435px;
+            position: absolute;
+            top: 156px;
+            color: white;
+        }
+        .content3{
+            width: 200px;
+            height: 109px;
+            border-radius: 8px;
+            margin-left: 655px;
+            position: absolute;
+            top: 156px;
+            color: white;
+        }
+        .main4{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 300px;   
+        }
+        .main4 > div{
+            background-color: darkblue;
+        }
+        .content4{
+            width: 200px;
+            height: 110px;
+            border-radius: 8px;
+            margin-left: 215px;
+            position: absolute;
+            top: 340px;
+            color: white;
+        }
+        .content5{
+            width: 200px;
+            height: 110px;
+            border-radius: 8px;
+            margin-left: 435px;
+            position: absolute;
+            top: 340px;
+            color: white;
+        }
+        .content6{
+            width: 200px;
+            height: 110px;
+            border-radius: 8px;
+            margin-left: 655px;
+            position: absolute;
+            top: 340px;
+            color: white;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="profile-card">
-        <img src="tanjiro.jpeg" class="profile-image">
-        <div class="profile-title">tanjiro</div>
-        <div class="profile-subtitle">Report For</div>
+    <div class="main">
+         <div class="left1">
+            <img src="tanjiro.jpeg" width="70px" height="auto">
+            <p>Report For</p>
+            <h2>Tanjiro<br>kamado</h2>
+         </div>
+
+         <div class="left2">
+           <p>Daily</p>
+           <p>Weekly</p>
+           <p>Monthly</p>
+         </div>
+
+         <div class="main1">
+            <div class="box1">
+                
+            </div>
+            
+            <div class="box2">
+
+            </div>
+            <div class="box3">
+
+            </div>
+         </div>
+
+         <div class="main2">
+            <div class="box4">
+
+            </div>
+            <div class="box5">
+
+            </div>
+            <div class="box6">
+
+            </div>
+           
+         </div>
+
+         <div class="main3">
+            <div class="content1">
+
+                <p><span style="font-size: medium;font-family:'Times New Roman', Times, serif;padding-left: 15px;">work</span><br><span style="font-size:30px;padding-left: 15px;">32hrs</span><br><br><span style="font-size: 13px;padding-left: 10px;">Last Week.36hrs</span></p>
+            </div>
+            <div class="content2">
+                <p><span style="font-size: medium;font-family:'Times New Roman', Times, serif;padding-left: 15px;">play</span><br><span style="font-size:30px;padding-left: 15px;">10hrs</span><br><br><span style="font-size: 13px;padding-left: 10px;">Last Week.8hrs</span></p>
+            </div>
+            <div class="content3">
+                <p><span style="font-size: medium;font-family:'Times New Roman', Times, serif;padding-left: 15px;">study</span><br><span style="font-size:30px;padding-left: 15px;">4hrs</span><br><br><span style="font-size: 13px;padding-left: 10px;">Last Week.7hrs</span></p>
+            </div>
+         </div>
+
+         <div class="main4">
+            <div class="content4">
+                <p><span style="font-size: medium;font-family:'Times New Roman', Times, serif;padding-left: 15px;">Exercise</span><br><span style="font-size:30px;padding-left: 15px;">4hrs</span><br><br><span style="font-size: 13px;padding-left: 10px;">Last Week.5hrs</span></p>
+            </div>
+            <div class="content5">
+                <p><span style="font-size: medium;font-family:'Times New Roman', Times, serif;padding-left: 15px;">social</span><br><span style="font-size:30px;padding-left: 15px;">5hrs</span><br><br><span style="font-size: 13px;padding-left: 10px;">Last Week.10hrs</span></p>
+            </div>
+            <div class="content6">
+                <p><span style="font-size: medium;font-family:'Times New Roman', Times, serif;padding-left: 15px;">self care</span><br><span style="font-size:30px;padding-left: 15px;">2hrs</span><br><br><span style="font-size: 13px;padding-left: 10px;">Last Week.2hrs</span></p>
+            </div>
+         </div>
     </div>
-
-    <body>
-        <div class="container">
-            <div class="profile">
-                <img src="nez.jpeg" alt="Profile Picture">
-                <h3>nezuko</h3>
-                <p class="report-for">Report For</p>
-            </div>
-            <div class="card" style="background-color: #f0ad4e;">
-                <h2>work</h2>
-                <p class="time">32hrs</p>
-                <p class="last-week">Last Week. 36hrs</p>
-            </div>
-    </body>
-
+    
+</body>
 </html>
